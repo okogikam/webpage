@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --bg-1: #343434;
+  --bg-2: #efefef;
+  --black: #000;
+  --shite: #fff;
+}
+
+.conteiner {
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+}
+.style-1 {
+  background-color: var(--bg-1);
+}
+.style-2 {
+  background-color: var(--bg-2);
+}
